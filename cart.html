@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <div class="header">
+    <img src="image/logocap.jpg" alt="logo">
+    <div class="search-area">
+      <input type="text" placeholder="Tìm kiếm...">
+      <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+      </div>      
+    </div>
+    <i class="fa-solid fa-cart-plus"></i>
+    <i class="fa-solid fa-message"></i>
+    <i class="fa-solid fa-bell"></i>
+    <i class="fa-solid fa-user"></i>
+  </div>
+
+  <div class="display-1"> <h2>Course Cart</h2></div>
+
+  
+    <div class="container mt-5 p-3 rounded cart">
+        <div class="row no-gutters">
+            <div class="col-md-8">
+                <div class="product-details mr-2">
+                    <div class="d-flex flex-row align-items-center"><i class="fa fa-long-arrow-left"></i><span class="ml-2">Continue Shopping</span></div>
+                    <hr>
+                    <h6 class="mb-0">Shopping cart</h6>
+                    <div class="d-flex justify-content-between"><span>You have 4 items in your cart</span>
+                        <div class="d-flex flex-row align-items-center"><span class="text-black-50">Sort by:</span>
+                            <div class="price ml-2"><span class="mr-1">price</span><i class="fa fa-angle-down"></i></div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+                        <div class="d-flex flex-row"><img class="rounded" src="image/java.jpg" width="40">
+                            <div class="ml-2"><span class="font-weight-bold d-block">JAVA FOR NEWBIE</span>
+                            <span class="spec">25 SECTION , 12HOUR, </span></div>
+
+                        </div>
+                        <div class="d-flex flex-row align-items-center"><span class="d-block">1</span><span class="d-block ml-5 font-weight-bold">$900</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+                        <div class="d-flex flex-row"><img class="rounded" src="image/c++.jpg" width="40">
+                            <div class="ml-2"><span class="font-weight-bold d-block">C++ FOR STUDENT</span><span class="spec">13 SECTION , 10HOUR</span></div>
+                        </div>
+                        <div class="d-flex flex-row align-items-center"><span class="d-block">1</span><span class="d-block ml-5 font-weight-bold">$900</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+                        <div class="d-flex flex-row"><img class="rounded" src="https://i.imgur.com/o2fKskJ.jpg" width="40">
+                            <div class="ml-2"><span class="font-weight-bold d-block">Google pixel 4 XL</span><span class="spec">256GB, Axe black</span></div>
+                        </div>
+                        <div class="d-flex flex-row align-items-center"><span class="d-block">1</span><span class="d-block ml-5 font-weight-bold">$800</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+                        <div class="d-flex flex-row"><img class="rounded" src="https://i.imgur.com/Tja5H1c.jpg" width="40">
+                            <div class="ml-2"><span class="font-weight-bold d-block">Samsung galaxy Note 10&nbsp;</span><span class="spec">256GB, Navy Blue</span></div>
+                        </div>
+                        <div class="d-flex flex-row align-items-center"><span class="d-block">1</span><span class="d-block ml-5 font-weight-bold">$999</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="payment-info">
+                    <div class="d-flex justify-content-between align-items-center"><span>Card details</span><img class="rounded" src="https://i.imgur.com/WU501C8.jpg" width="30"></div><span class="type d-block mt-3 mb-1">Card type</span><label class="radio"> <input type="radio" name="card" value="payment" checked> <span><img width="30" src="https://img.icons8.com/color/48/000000/mastercard.png"/></span> </label>
+
+<label class="radio"> <input type="radio" name="card" value="payment"> <span><img width="30" src="https://img.icons8.com/officel/48/000000/visa.png"/></span> </label>
+
+<label class="radio"> <input type="radio" name="card" value="payment"> <span><img width="30" src="https://img.icons8.com/ultraviolet/48/000000/amex.png"/></span> </label>
+
+
+<label class="radio"> <input type="radio" name="card" value="payment"> <span><img width="30" src="https://img.icons8.com/officel/48/000000/paypal.png"/></span> </label>
+                    <div><label class="credit-card-label">Name on card</label><input type="text" class="form-control credit-inputs" placeholder="Name"></div>
+                    <div><label class="credit-card-label">Card number</label><input type="text" class="form-control credit-inputs" placeholder="0000 0000 0000 0000"></div>
+                    <div class="row">
+                        <div class="col-md-6"><label class="credit-card-label">Date</label><input type="text" class="form-control credit-inputs" placeholder="12/24"></div>
+                        <div class="col-md-6"><label class="credit-card-label">CVV</label><input type="text" class="form-control credit-inputs" placeholder="342"></div>
+                    </div>
+                    <hr class="line">
+                    <div class="d-flex justify-content-between information"><span>Subtotal</span><span>$3000.00</span></div>
+                    <div class="d-flex justify-content-between information"><span>Shipping</span><span>$20.00</span></div>
+                    <div class="d-flex justify-content-between information"><span>Total(Incl. taxes)</span><span>$3020.00</span></div><button class="btn btn-primary btn-block d-flex justify-content-between mt-3" type="button"><span>$3020.00</span><span>Checkout<i class="fa fa-long-arrow-right ml-1"></i></span></button></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="display-2">
+        <h4>Recently in Your Cart</h4>
+
+        <div class="d-flex justify-content-between"><span>You have 4 items in your cart</span>
+                        <div class="d-flex flex-row align-items-center"><span class="text-black-50">Sort by:</span>
+                            <div class="price ml-2"><span class="mr-1">price</span><i class="fa fa-angle-down"></i></div>
+                        </div>
+                    </div>
+        <div class="d-flex justify-content-between"><span>You have 4 items in your cart</span>
+                        <div class="d-flex flex-row align-items-center"><span class="text-black-50">Sort by:</span>
+                            <div class="price ml-2"><span class="mr-1">price</span><i class="fa fa-angle-down"></i></div>
+                        </div>
+                    </div>
+
+        
+    </div>
+
+    <div class="display-3">
+        <h4> Your Course Maybe You like</h4>
+        <div class="course-list">
+ 
+      <div class="course1">
+        <img src="image/React_Native_Tutorial.avif" alt="react">
+        <h4> React Native</h4>
+       <p> Nguyen Tran Thanh Duy <a href="https://www.facebook.com/yui.guende.3"></a> </p>
+       <ul class="rating">
+  <h6>4.6 rating</h6>
+  <li><i class="fa-solid fa-star"></i></li>
+  <li><i class="fa-solid fa-star"></i></li>
+  <li><i class="fa-solid fa-star"></i></li>
+  <li><i class="fa-solid fa-star"></i></li>
+  <li><i class="fa-solid fa-star"></i></li>
+</ul>
+
+<p><i class="fa-solid fa-person"></i> 360 Student</p>
+<p><i class="fa-brands fa-youtube"></i>400 video</p>
+
+<span class="price">1.600.000 <i class="fa-solid fa-money-bill-wave"></i></span>
+        </div>   
+ 
+  <div class="course2">
+    <img src="image/JavaScript-Logo.jpg" alt="JavaScript-Logo">
+    <h4>JavaScript</h4>
+    <p> Nguyen Tran Thanh Duy <a href="https://www.facebook.com/yui.guende.3"></a> </p>
+       <ul class="rating">
+  <h6>4.6 rating</h6>
+  <li><i class="fa-solid fa-star"></i></li>
+  <li><i class="fa-solid fa-star"></i></li>
+  <li><i class="fa-solid fa-star"></i></li>
+  <li><i class="fa-solid fa-star"></i></li>
+  <li><i class="fa-solid fa-star"></i></li>
+</ul>
+
+<p><i class="fa-solid fa-person"></i> 900 Student</p>
+<p><i class="fa-brands fa-youtube"></i>1000 video</p>
+
+<span class="price">2.000.000<i class="fa-solid fa-money-bill-wave"></i></span>
+  </div>
+
+  <div class="course3">
+    <img src="image/github.jpg" alt="github">
+    <h4>Github</h4>
+    <p> Nguyen Tran Thanh Duy <a href="https://www.facebook.com/yui.guende.3"></a> </p>
+       <ul class="rating">
+  <h6>4.7 rating</h6>
+  <li><i class="fa-solid fa-star"></i></li>
+  <li><i class="fa-solid fa-star"></i></li>
+  <li><i class="fa-solid fa-star"></i></li>
+  <li><i class="fa-solid fa-star"></i></li>
+  <li><i class="fa-solid fa-star"></i></li>
+</ul>
+
+<p><i class="fa-solid fa-person"></i> 80 Student</p>
+<p><i class="fa-brands fa-youtube"></i>5 video</p>
+
+<span class="price">70.000<i class="fa-solid fa-money-bill-wave"></i></span>
+  </div>
+   </div>
+    </div>
+
+    <div class="Footer">
+  <img src="image/logo.png" alt="logo">
+  <h2><i class="fa-solid fa-at"></i>EduBridge:Since 2025</h2>
+
+</div>
+    
+</body>
+</html>
